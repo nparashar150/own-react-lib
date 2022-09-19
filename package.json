@@ -1,0 +1,17 @@
+{
+  "name": "own-react-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nparashar150/own-react-lib",
+  "author": "nparashar150 <nparashar150@gmail.com>",
+  "scripts": {
+    "start": "nodemon ./server/start.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
