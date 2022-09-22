@@ -1,0 +1,13 @@
+[
+  {
+    "watch": ["./src", "./server"],
+    "ext": ["js", "jsx", "json", "ts", "tsx", "css", "scss"],
+    "ignore": [
+      "dist",
+      "public",
+      "node_modules",
+      "./src/**/*.spec.ts",
+      "./src/**/*.test.ts"
+    ]
+  }
+]

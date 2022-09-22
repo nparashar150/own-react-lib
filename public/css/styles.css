@@ -1,0 +1,24 @@
+html,
+body {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #fefefe;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  outline: 1px solid #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
