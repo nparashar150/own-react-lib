@@ -1,0 +1,30 @@
+name: Deploying to gh-pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+
+    steps:
+      - name: Checkout 🐧
+        uses: actions/checkout@v3
+
+      - name: Install and Build
+        run: |
+          yarn
+          yarn build
+
+      - name: Deploying to gh-pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: main
+          folder: public
