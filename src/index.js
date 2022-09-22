@@ -107,5 +107,10 @@ import { button } from "./components/button/button";
     },
     "Click Me"
   );
+
+  const AnotherButton = () => {
+    return <button className="class">Another Button</button>;
+  };
+  AnotherButton();
 })();
 export { createElement };

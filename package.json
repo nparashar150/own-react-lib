@@ -5,18 +5,20 @@
   "repository": "https://github.com/nparashar150/own-react-lib",
   "author": "nparashar150 <nparashar150@gmail.com>",
   "scripts": {
-    "dev": "webpack-dev-server --mode=development",
-    "start": "webpack --mode=development",
     "build": "webpack --mode=production",
+    "start": "webpack --mode=development",
+    "dev": "webpack-dev-server --mode=development",
+    "babel": "nodemon ./scripts/babel-webpack-compile.js",
     "lint": "eslint \"src/**/*.{js,jsx}\" \"lib/**/*.{js,jsx}\"",
-    "lint:fix": "eslint \"src/**/*.{js,jsx}\" \"lib/**/*.{js,jsx}\" --fix"
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" \"lib/**/*.{js,jsx}\" --fix",
+    "babel-webpack-dev": "yarn babel && webpack-dev-server --mode=development"
   },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
     "@babel/preset-react": "^7.18.6",
-    "concurrently": "^7.4.0",
+    "babel-cli": "^6.26.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.23.1",
     "eslint-plugin-import": "^2.26.0",

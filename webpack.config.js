@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/babel.js",
   output: {
     path: path.join(__dirname, "public"),
     filename: "./js/own-react-bundle.js",
