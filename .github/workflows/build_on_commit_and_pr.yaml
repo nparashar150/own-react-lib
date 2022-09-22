@@ -26,5 +26,5 @@ jobs:
       - name: Deploying to gh-pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main
+          branch: gh-pages
           folder: public
