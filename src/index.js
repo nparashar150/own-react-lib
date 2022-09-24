@@ -1,4 +1,5 @@
 import { createElement } from "../lib/createElement";
+import { button } from "./components/button/button";
 
 (function createDOMNode() {
   const root = document.body;
@@ -96,5 +97,15 @@ import { createElement } from "../lib/createElement";
     ],
     parentElement: divCreatedFromFunction,
   });
+
+  button(
+    root,
+    {
+      onclick: () => {
+        alert("You have clicked me!!");
+      },
+    },
+    "Click Me"
+  );
 })();
 export { createElement };
