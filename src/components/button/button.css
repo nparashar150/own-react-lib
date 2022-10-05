@@ -1,0 +1,20 @@
+.__btn {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.25rem;
+  outline-offset: 1px;
+  padding: 1.25rem 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1a1a1a;
+  outline: 1px solid transparent;
+  transition: all 0.375s ease-in-out;
+}
+
+.__btn:hover,
+.__btn:focus {
+  color: #fafafa;
+  outline-offset: 1px;
+  border: 1px solid #fafafa;
+  background-color: #1a1a1a;
+  outline: 1px solid #1a1a1a;
+}
