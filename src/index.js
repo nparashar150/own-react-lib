@@ -5,9 +5,10 @@ const App = () => {
   return (
     <div id="root2">
       <h1>My First Own React App</h1>
+      {/* <Button /> */}
       <p>
         <div className="testing">
-          <h1>My First Own React App</h1>
+          <h1>My First Own React App with custom Babel and Webpack config</h1>
           <p>This is another nesting level</p>
         </div>
       </p>
