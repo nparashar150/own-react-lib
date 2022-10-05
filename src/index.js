@@ -4,9 +4,13 @@ import OwnReact from "../lib/index";
 const App = () => {
   return (
     <div id="root2">
-      {/* <Button /> */}
       <h1>My First Own React App</h1>
-      <p>Lets see how it works</p>
+      <p>
+        <div className="testing">
+          <h1>My First Own React App</h1>
+          <p>This is another nesting level</p>
+        </div>
+      </p>
     </div>
   );
 };
