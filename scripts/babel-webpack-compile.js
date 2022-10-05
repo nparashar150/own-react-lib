@@ -2,7 +2,7 @@ const { exec } = require("child_process");
 const fs = require("fs");
 
 exec(
-  "node ./node_modules/babel-cli/bin/babel ./src/index.js",
+  "node ./node_modules/@babel/cli/bin/babel ./src/index.js",
   (error, stdout, stderr) => {
     if (error) {
       console.log(`error: ${error.message}`);
@@ -24,4 +24,4 @@ exec(
     });
   }
 );
-// node ./node_modules/babel-cli/bin/babel babel/index.js
+// node ./node_modules/@babel/cli/bin/babel babel/index.js
