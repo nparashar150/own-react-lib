@@ -8,7 +8,7 @@
     "build": "webpack --mode=production",
     "start": "webpack --mode=development",
     "dev": "webpack-dev-server --mode=development",
-    "babel": "nodemon ./scripts/babel-webpack-compile.js",
+    "babel": "node ./scripts/babel-webpack-compile.js",
     "lint": "eslint \"src/**/*.{js,jsx}\" \"lib/**/*.{js,jsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx}\" \"lib/**/*.{js,jsx}\" --fix",
     "babel-webpack-dev": "yarn babel && webpack-dev-server --mode=development"

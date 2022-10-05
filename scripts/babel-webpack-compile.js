@@ -12,16 +12,16 @@ exec(
       console.log(`stderr: ${stderr}`);
       return;
     }
-    if (!fs.existsSync("./src/babel.js")) {
-      fs.writeFile("./src/babel.js", "", function (err) {
+    if (!fs.existsSync("./babel/babel.js")) {
+      fs.writeFile("./babel/babel.js", "", function (err) {
         if (err) throw err;
-        console.log("Babel file created @src/babel.js!");
+        console.log("Babel file created @babel/babel.js!");
       });
     }
-    fs.writeFile("./src/babel.js", stdout, (err) => {
+    fs.writeFile("./babel/babel.js", stdout, (err) => {
       if (err) throw err;
-      console.log("JSX transpiled via Babel @src/babel.js!");
+      console.log("JSX transpiled via Babel @babel/babel.js!");
     });
   }
 );
-// node ./node_modules/babel-cli/bin/babel src/index.js
+// node ./node_modules/babel-cli/bin/babel babel/index.js
