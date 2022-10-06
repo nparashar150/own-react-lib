@@ -3,8 +3,8 @@ element["store"] = {};
 document.body.appendChild(element);
 element.innerText = "";
 
-let root = document.body;
-root.setAttribute("id", "root");
+let root = document.getElementById("root");
+// root.setAttribute("id", "root");
 
 /**
  *
