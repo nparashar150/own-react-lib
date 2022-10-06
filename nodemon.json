@@ -1,6 +1,6 @@
 [
   {
-    "watch": ["./src", "./server"],
+    "watch": ["./src", "./lib"],
     "ext": ["js", "jsx", "json", "ts", "tsx", "css", "scss"],
     "ignore": [
       "dist",

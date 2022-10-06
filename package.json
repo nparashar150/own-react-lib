@@ -5,17 +5,22 @@
   "repository": "https://github.com/nparashar150/own-react-lib",
   "author": "nparashar150 <nparashar150@gmail.com>",
   "scripts": {
-    "dev": "webpack-dev-server --mode=development",
-    "start": "webpack --mode=development",
     "build": "webpack --mode=production",
+    "start": "webpack --mode=development",
+    "dev": "webpack-dev-server --mode=development",
+    "babel": "nodemon --watch ./src ./scripts/babel-webpack-compile.js",
     "lint": "eslint \"src/**/*.{js,jsx}\" \"lib/**/*.{js,jsx}\"",
-    "lint:fix": "eslint \"src/**/*.{js,jsx}\" \"lib/**/*.{js,jsx}\" --fix"
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" \"lib/**/*.{js,jsx}\" --fix",
+    "babel-webpack-dev": "concurrently \"yarn babel\" \"yarn dev\""
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.1",
+    "@babel/plugin-transform-react-jsx": "^7.19.0",
     "@babel/preset-env": "^7.19.1",
     "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
     "concurrently": "^7.4.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.23.1",

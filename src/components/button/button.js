@@ -1,28 +1,11 @@
-import { createElement } from "../../../lib/createElement";
+import OwnReact from "../../../lib/index";
+import "./button.css";
 
-export const button = (parentElement, props, innerText) => {
-  if (!parentElement) return;
-
-  // styling in JS object is converted to CSS string
-  const buttonStyles = {
-    backgroundColor: "#EEE",
-    color: "#1a1a1a",
-    padding: "10px",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
+const Button = (children) => {
+  const handleClick = () => {
+    alert("Button clicked");
   };
-
-  const button = createElement({
-    element: "button",
-    props: {
-      ...props,
-      style: buttonStyles,
-    },
-    state: {},
-    children: innerText,
-    parentElement,
-  });
-
-  return button;
+  return <button className="__btn" onClick={() => handleClick()}>{children}</button>;
 };
+
+export default Button;

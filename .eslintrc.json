@@ -10,7 +10,15 @@
     "react/prop-types": 0,
     "indent": ["error", 2],
     "linebreak-style": 1,
-    "quotes": ["error", "double"]
+    "react/react-in-jsx-scope": "off",
+    "quotes": ["error", "double"],
+    "no-unused-vars": [
+      "error",
+      {
+        // Allow unused variables that start with OwnReact
+        "varsIgnorePattern": "OwnReact"
+      }
+    ]
   },
   "parserOptions": {
     "ecmaVersion": 2021,
